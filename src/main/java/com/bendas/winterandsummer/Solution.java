@@ -4,6 +4,9 @@ public class Solution {
 
   public int solution(int[] T) {
 
+    if (T.length < 2) {
+      throw new RuntimeException("Not enough days");
+    }
     int minValue = T[0];
     int maxValue = T[0];
     int maxWinterValue = T[0];
